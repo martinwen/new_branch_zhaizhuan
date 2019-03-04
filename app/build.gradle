@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.iqianbang.fanpai"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 28
+        versionName "2.0.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "1c4fb9c561526b172e376356", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    testCompile 'junit:junit:4.12'
+    /*TabLayout分页框架*/
+    compile 'com.android.support:design:23.4.0'
+    /*下拉刷新*/
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    /*网络框架*/
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.alibaba:fastjson:1.2.24'
+    /*加载图片*/
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    /*七鱼客服*/
+    compile 'com.qiyukf.unicorn:unicorn:2.9.0'
+    /*用butterknife来减少findViewById*/
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    /*扫二维码*/
+    //    compile files('libs/ZxingScanner.jar')
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    /*下拉刷新*/
+    compile project(':pullToRefresh')
+    /*shareSDK分享*/
+    compile files('libs/MobCommons-2017.0216.1054.jar')
+    /*大饭团出借时间选择尺子*/
+    compile project(':rulberview')
+    /*总资产饼状图*/
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    /*提现进度*/
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    /*友盟统计*/
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    /*百度统计*/
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    /*下拉刷新控件*/
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    /*启动页的gif动画*/
+    compile 'com.github.Cutta:GifView:1.1'
+    /*JPush推送*/
+    compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
+}

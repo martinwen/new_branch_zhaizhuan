@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_whitecolor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/global_bg_blackcolor">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="签到"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_notsign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign_bg_up"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="记得签到哟~"
+                        android:textColor="@color/bg_one_black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/sign_btn_done" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="连续签到5天可获得神秘惊喜哦\n连续签到10天惊喜升级！"
+                        android:textColor="@color/global_whitecolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_signed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sign_bg_up"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="您已经连续签到"
+                        android:textColor="@color/bg_one_black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:text="0天"
+                        android:textColor="@color/bg_one_black"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:background="@drawable/sign_bg_yiqian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="3dp"
+                        android:text="连续签到5天可获得神秘惊喜哦\n连续签到10天惊喜升级！"
+                        android:textColor="@color/global_whitecolor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <com.iqianbang.fanpai.view.calendar.SignCalendar
+                android:layout_marginTop="8dp"
+                android:id="@+id/my_sign_calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/global_whitecolor"></com.iqianbang.fanpai.view.calendar.SignCalendar>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

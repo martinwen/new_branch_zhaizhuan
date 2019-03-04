@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_onebtn"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="请重新登录后，重新设置手势密码"
+            android:textColor="@color/bg_one_black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tv_loginagain"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="重新登录"
+            android:textColor="@color/text_green"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

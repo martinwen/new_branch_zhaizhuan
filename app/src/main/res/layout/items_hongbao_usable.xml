@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/global_whitecolor"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_hongbao_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/user_hongbao"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="饭碗红包"
+            android:textColor="@color/bg_one_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_invest_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/point_black"
+            android:drawablePadding="5dp"
+            android:text="最低出借"
+            android:textColor="@color/bg_one_black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_hongbao_usetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/point_black"
+            android:drawablePadding="5dp"
+            android:text="有效时间"
+            android:textColor="@color/bg_one_black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_hongbao_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/point_black"
+            android:drawablePadding="5dp"
+            android:text="适用范围"
+            android:textColor="@color/bg_one_black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_hongbao_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/point_black"
+            android:drawablePadding="5dp"
+            android:text="获得来源"
+            android:textColor="@color/bg_one_black"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/tv_hongbao_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/point_black"
+            android:drawablePadding="5dp"
+            android:text="特别说明"
+            android:textColor="@color/bg_one_black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- pickerview -->
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+
+    <!--calendar-->
+    <dimen name="cal_title_height">35dp</dimen>
+    <dimen name="cal_title_h_margin">10dp</dimen>
+    <!--<dimen name="cal_weekdays_height">52dp</dimen>-->
+    <dimen name="cal_weekdays_height">25dp</dimen>
+    <dimen name="cal_weekdays_text_size">12sp</dimen>
+    <dimen name="cal_weekdays_h_margin">10dp</dimen>
+    <dimen name="cal_divider_h_margin">10dp</dimen>
+    <dimen name="cal_divider_height">1dp</dimen>
+    <dimen name="cal_arrow_height">14dp</dimen>
+    <dimen name="cal_day_text_size">13sp</dimen>
+    <dimen name="cal_pager_h_margin">10dp</dimen>
+    <dimen name="cal_date_v_margin">8dp</dimen>
+    <dimen name="cal_date_width">35dp</dimen>
+    <dimen name="cal_date_height">35dp</dimen>
+
+
+    <!--PieChartView-->
+    <dimen name="pie_chart_text1_size">18sp</dimen>
+    <dimen name="pie_chart_text2_size">16sp</dimen>
+</resources>

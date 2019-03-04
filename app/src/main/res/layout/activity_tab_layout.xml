@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iqianbang.fanpai.activity.TabLayoutActivity">
+    <!--        app:tabIndicatorColor="#00f"  tab底部选中的颜色标识
+                 app:tabIndicatorHeight="4dp" 标识的高度
+                 app:tabSelectedTextColor="#00f"  选中tab文字的颜色
+                 app:tabTextColor="#000"   没有选中tab文字的颜色
+                 -->
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#F89595"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="#F89595"
+        app:tabTextColor="#000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_pop_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_vip"
+            android:layout_gravity="center_horizontal"
+            android:text="邀请奖励"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="11sp" />
+
+
+            <TextView
+                android:id="@+id/tv_context"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:text=""
+                android:textColor="@color/global_whitecolor"
+                android:textSize="10sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

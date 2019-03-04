@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_onebtn"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textSize="14sp"
+            android:textColor="@color/global_whitecolor"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:lineSpacingExtra="3dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="您上次的评测结果是保守型，风险承受能力未满足平台要求，暂无法出借。您评测机会已经用完，如有疑问请联系客服。"
+            android:textColor="@color/bg_one_black"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textSize="15sp"
+            android:textColor="@color/text_green"
+             />
+    </LinearLayout>
+
+</LinearLayout>

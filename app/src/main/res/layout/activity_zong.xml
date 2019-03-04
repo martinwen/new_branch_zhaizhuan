@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_whitecolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_title_red">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="总资产"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:layout_marginTop="40dp"
+        android:id="@+id/chart"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        >
+    </lecho.lib.hellocharts.view.PieChartView>
+
+    <TextView
+        android:id="@+id/tv_xiaofantuan"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_xiaofantuan"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+    <TextView
+        android:id="@+id/tv_dafantuan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_dafantuan"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+    <TextView
+        android:id="@+id/tv_jingyingtuan"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_jingyingtuan"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+    <TextView
+        android:id="@+id/tv_zhanghu"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_zhanghu"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+    <TextView
+        android:id="@+id/tv_tixian"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_tixian"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+    <TextView
+        android:id="@+id/tv_jiangjin"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pie_jiangjin"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/bg_one_black"/>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vip_pop_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_vip"
+            android:layout_gravity="center_horizontal"
+            android:text="邀请奖励"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/vip_redpoint"
+            android:drawablePadding="5dp"
+            android:text="普通会员"
+            android:textColor="@color/global_redcolor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_normal"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="普通会员\n普通会员普通会普通会员普通会员\n普通会员"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/vip_redpoint"
+            android:drawablePadding="5dp"
+            android:text="核心会员"
+            android:textColor="@color/global_redcolor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_core"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="普通会员\n普通会员普通会普通会员普通会员\n普通会员"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/vip_redpoint"
+            android:drawablePadding="5dp"
+            android:text="高级核心会员"
+            android:textColor="@color/global_redcolor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_highcore"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="普通会员\n普通会员普通会普通会员普通会员\n普通会员"
+            android:textColor="@color/global_whitecolor"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</LinearLayout>

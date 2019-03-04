@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_whitecolor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/global_bg_blackcolor">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="签到"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_bg_up"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="您已经连续签到"
+                    android:textColor="@color/bg_one_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:text="0天"
+                    android:textColor="@color/bg_one_black"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:background="@drawable/sign_bg_yiqian"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:text="只有核心会员才能签到哦~"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_ruhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="如何成为核心会员 >"
+                    android:textColor="@color/bg_one_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.iqianbang.fanpai.view.calendar.SignCalendar
+                android:layout_marginTop="8dp"
+                android:id="@+id/my_sign_calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/global_whitecolor"></com.iqianbang.fanpai.view.calendar.SignCalendar>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

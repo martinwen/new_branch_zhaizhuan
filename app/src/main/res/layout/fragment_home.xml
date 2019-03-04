@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/find_bg">
+
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_yaoqinghaoyou"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_qaoqinghaoyou"
+                    android:drawablePadding="10dp"
+                    android:text="邀请好友"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="13sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_zhanneixin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:drawableTop="@drawable/home_zhanneixin"
+                        android:drawablePadding="10dp"
+                        android:text="官方公告"
+                        android:textColor="@color/global_whitecolor"
+                        android:textSize="13sp"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_zhanneixin_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="14dp"
+                        android:paddingBottom="10dp"
+                        android:src="@drawable/home_zhanneixin_tip"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_qiandao"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_qiandao"
+                    android:drawablePadding="10dp"
+                    android:text="签到"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_fanju"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/home_fanju"
+                    android:drawablePadding="10dp"
+                    android:text="天天饭局"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/home_recommend"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:text="推荐产品"
+            android:textStyle="bold"
+            android:textColor="@color/text_red_dark"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/home_product_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="历史年化结算利率"
+                android:textColor="@color/bg_one_black"
+                android:textSize="16sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_shouyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_product">
+
+                    <TextView
+                        android:id="@+id/tv_shouyi_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="8.88%"
+                        android:textColor="#EA5D41"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tedian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_shouyi_base"
+                        android:layout_centerHorizontal="true"
+                        android:text="灵活存取"
+                        android:textColor="@color/text_red_dark"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_toRightOf="@id/ll_shouyi"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_limit_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最高限额"
+                        android:textColor="@color/text_graycolor"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_xiane"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50万元"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg_one_black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_toLeftOf="@id/ll_shouyi"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最低出借"
+                        android:textColor="@color/text_graycolor"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_qitou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000元"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg_one_black"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_shouyi_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ll_shouyi"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="+1.30%"
+                    android:textColor="@color/global_whitecolor"
+                    android:textSize="11sp"
+                    android:background="@drawable/invest_xiaofantuanadd_bg"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_buy"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/home_invest"/>
+
+    </LinearLayout>
+</ScrollView>
