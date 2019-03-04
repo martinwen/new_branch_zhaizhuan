@@ -180,7 +180,7 @@ public class MainActivity extends BaseActivity {
         return false;
     }
 
-    //退出app
+    //退出app，杀死进程
     private void exitApp(){
         if (isExit == false) {
             isExit = true;
