@@ -40,7 +40,12 @@ import com.umeng.analytics.MobclickAgent;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
+/**
+ * 类描述：MainActivity
+ * @author WenGuangJun
+ * create at 2019/3/4 11:11
+ */
+ 
 public class MainActivity extends BaseActivity {
 
     private FrameLayout homeFragments;
